@@ -9,10 +9,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Hello, world!</title>
+    <title>R-Gallery</title>
 </head>
 
-<body>
+<body id="home">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">R-Gallery</a>
@@ -22,7 +22,7 @@
             <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
@@ -59,8 +59,8 @@
         </div>
     </section>
 
-    <section id="gallery">
-        <div class="d-flex flex-column gap-5 container pt-3">
+    <section id="gallery" class="mb-3">
+        <div class="d-flex flex-column gap-5 container">
             <div class="d-flex title justify-content-center">
                 <h4 class="fw-bold underlined">Gallery</h4>
             </div>
@@ -78,7 +78,7 @@
         </div>
     </section>
     <section id="about">
-        <div class="d-flex flex-column gap-5 container pt-3">
+        <div class="d-flex flex-column gap-5 container">
             <div class="d-flex title justify-content-center">
                 <h4 class="fw-bold underlined">About Me</h4>
             </div>
