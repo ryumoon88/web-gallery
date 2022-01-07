@@ -10,16 +10,25 @@
 
 body {
     margin-top: var(--bs-navbar-height);
-    margin-bottom: 100px;
 }
 
 section {
-    height: calc(100vh - var(--bs-navbar-height));
+    min-height: calc(100vh - var(--bs-navbar-height));
     margin-bottom: auto;
+    margin-top: 20px;
 }
 
 section .container {
     height: auto;
+}
+
+section#about {
+    background: #ccc;
+}
+
+#profile img {
+    width: 150px;
+    border-radius: 50%;
 }
 
 .carousel .carousel-inner img {
@@ -33,39 +42,22 @@ section .container {
     display: block;
 }
 
-.underlined::after {
-    content: '';
-    height: 2px;
-    position: absolute;
-    width: 100px;
-    display: block;
-    transform: translateX(-7px);
-    margin-top: 5px;
-    background-color: black;
-}
-
-.underlined:hover::after {
-    animation: shrinking 1s infinite ease-in-out;
+.modal-header {
+    background-color: transparent !important;
 }
 
 #img-space img {
     width: 300px;
+    transition: transform .3s ease-in-out;
+    border-radius: 20px;
 }
 
-@keyframes shrinking {
-    0% {
-        width: 100px;
-    }
+#img-space img:active {
+    pointer-events: none;
+}
 
-
-
-    50% {
-        width: 0;
-    }
-
-    100% {
-        width: 100px;
-    }
+#img-space img:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 998px) {
